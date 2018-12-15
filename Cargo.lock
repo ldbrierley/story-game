@@ -1,0 +1,14 @@
+[[package]]
+name = "read_input"
+version = "0.7.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "story-game"
+version = "0.1.0"
+dependencies = [
+ "read_input 0.7.2 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum read_input 0.7.2 (registry+https://github.com/rust-lang/crates.io-index)" = "30c7aaa75f1ea9fcb6292ccd636d4f5be4ccecf9ebf38108012f0baced34849f"

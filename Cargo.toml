@@ -1,0 +1,9 @@
+[package]
+name = "story-game"
+version = "0.1.0"
+authors = ["Ethan Brierley <ethanboxx@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+read_input = "0.7"
+
