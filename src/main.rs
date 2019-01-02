@@ -39,7 +39,6 @@ fn main() {
         }
         4 => {
             println!(" Both you and Andrew took down the guards with ease remembering your mashal arts skills. ");
-            println!("GAME OVER.");
         }
         5 => {
             println!("You and Andrew ran strait in to the gaurds swords and died. .\n GAME OVER. ");
