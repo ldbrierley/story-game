@@ -50,8 +50,11 @@ fn main() {
     println!("You and Andrew ran into the forest together. Andrew was taking you to the cave of darkness where you would unleesh your full potential.\n Before we get to the cave we must stay in the inn at Westfield village where we will sleep said Andrew ");
     println!("did you 1) follow Andrew.\n 2) Nah i'm going my own way");
     match input_inside(1..=2) {
-        1 => println!("You arived at the village to stay in the inn and rest there but then Dr Lamption's best woriers raided the inn killing you and Andrew in your sleep"),
+        1 => {
+            println!("You arived at the village to stay in the inn and rest there but then Dr Lamption's best woriers raided the inn killing you and Andrew in your sleep");
+            println!("GAME OVER");
+        }
         2 => println!("You win so far, but be aware there is more coming soon."),
-    _ => unreachable!(),
+        _ => unreachable!(),
     }
 }
