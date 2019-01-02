@@ -52,7 +52,7 @@ fn main() {
     println!("did you 1) follow Andrew.\n 2) Nah i'm going my own way");
     match input_inside(1..=2) {
         1 => println!("You arived at the village to stay in the inn and rest there but then Dr Lamption's best woriers raided the inn killing you and Andrew in your sleep"),
-
+        2 => println!("You win so far, but be awar there is more coming soon."),
     _ => unreachable!(),
     }
 }
