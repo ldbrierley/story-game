@@ -1,14 +1,14 @@
 [[package]]
 name = "read_input"
-version = "0.7.2"
-source = "git+https://github.com/ethanboxx/read_input.git#3a5d46b435210c5d2b7e2cd6c53ae1fbd0a7bdec"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "story-game"
 version = "0.1.0"
 dependencies = [
- "read_input 0.7.2 (git+https://github.com/ethanboxx/read_input.git)",
+ "read_input 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [metadata]
-"checksum read_input 0.7.2 (git+https://github.com/ethanboxx/read_input.git)" = "<none>"
+"checksum read_input 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)" = "f48f955e4b582a03212f18e594f04d8c81d4eeaae4bc20eaed794ce9cefd3d4c"

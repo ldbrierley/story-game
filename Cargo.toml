@@ -5,5 +5,5 @@ authors = ["Ethan Brierley <ethanboxx@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-read_input = { git = "https://github.com/ethanboxx/read_input.git" }
+read_input = "0.8"
 
