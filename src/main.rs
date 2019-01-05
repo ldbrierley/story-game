@@ -55,7 +55,34 @@ fn main() {
             println!("GAME OVER");
             return ();
         }
-        2 => println!("You win so far, but be aware there is more coming soon."),
+        2 => {
+            println!("You win so far, but be aware there is more coming soon.");
+            return ();
+        }
+        _ => unreachable!(),
+    }
+    println!(" \"NOOOOOOOOOOO!!!!!!!!!!!!!!!\".  Said Andrew. But you had already gone into the thick forest and out of the sight of Andrew");
+    println!("Did You");
+    println!("1) Go north");
+    println!("2) Go east");
+    println!("3) Go west");
+    match input_inside(1..=3) {
+        1 => {
+            println!("You continued traveling North When you heard a weired noise.");
+            println!("Did you.");
+            println!("1) Go back and be a noob");
+            println!("Continue, your not a noob");
+            match input_inside(1..=2) {
+                1 => {}
+                2 => {
+                    println!("Suddenly you saw 15 of Dr Lamption best woriers stop you.");
+                    println!("Did you.")
+                }
+
+                _ => unreachable!(),
+            }
+        }
+
         _ => unreachable!(),
     }
 }
