@@ -53,6 +53,7 @@ fn main() {
         1 => {
             println!("You arived at the village to stay in the inn and rest there but then Dr Lamption's best woriers raided the inn killing you and Andrew in your sleep");
             println!("GAME OVER");
+            return ();
         }
         2 => println!("You win so far, but be aware there is more coming soon."),
         _ => unreachable!(),
