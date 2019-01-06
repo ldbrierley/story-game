@@ -76,7 +76,9 @@ fn main() {
                 1 => {}
                 2 => {
                     println!("Suddenly you saw 15 of Dr Lamption best woriers stop you.");
-                    println!("Did you.")
+                    println!("Did you.");
+                    println!("1) Attack them.");
+                    println!("2)ruuuuuunn!!!!");
                 }
 
                 _ => unreachable!(),
