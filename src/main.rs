@@ -57,7 +57,7 @@ fn main() {
         }
         2 => {
             println!("You win so far, but be aware there is more coming soon.");
-            return ();
+            
         }
         _ => unreachable!(),
     }
