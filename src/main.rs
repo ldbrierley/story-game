@@ -61,11 +61,14 @@ fn main() {
         }
         _ => unreachable!(),
     }
+}
+
     println!(" \"NOOOOOOOOOOO!!!!!!!!!!!!!!!\".  Said Andrew. But you had already gone into the thick forest and out of the sight of Andrew");
+    fn junction() {
     println!("Did You");
-    println!("1) Go north");
-    println!("2) Go east");
-    println!("3) Go west");
+    println!("1) Go east");
+    println!("2) Go south ");
+    println!("3) Go north ");
     match input_inside(1..=3) {
         1 => {
             println!("You continued traveling North When you heard a weired noise.");
@@ -73,18 +76,42 @@ fn main() {
             println!("1) Go back and be a noob");
             println!("Continue, your not a noob");
             match input_inside(1..=2) {
-                1 => {}
+                1 => {
+                    println!("Pathetic.");
+                    junction();
+                }
                 2 => {
                     println!("Suddenly you saw 15 of Dr Lamption best woriers stop you.");
                     println!("Did you.");
                     println!("1) Attack them.");
                     println!("2)ruuuuuunn!!!!");
+                    match input_inside(1..=2) {
+                    1 => {
+                        println!("You could defeat two of Dr Lamptions gaurds but not 15 woriers.");
+                        println!("You died.");
+                        println!("GAME OVER.");
+                        junction();
+                    }
+                    2 => {
+                        println!("You ran, because the forest was so thick they lost you.");
+                        println!("You went back");
+                        junction();
+
+                    }
+                    _ => unreachable!(), 
+                    }
+
                 }
 
                 _ => unreachable!(),
             }
         }
+        2 => {
+            println!("");
+        }
 
         _ => unreachable!(),
     }
 }
+
+
