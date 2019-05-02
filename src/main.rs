@@ -57,21 +57,21 @@ fn main() {
         }
         2 => {
             println!("You win so far, but be aware there is more coming soon.");
-            
         }
         _ => unreachable!(),
     }
+    println!(" \"NOOOOOOOOOOO!!!!!!!!!!!!!!!\".  Said Andrew. But you had already gone into the thick forest and out of the sight of Andrew");
 }
 
-    println!(" \"NOOOOOOOOOOO!!!!!!!!!!!!!!!\".  Said Andrew. But you had already gone into the thick forest and out of the sight of Andrew");
-    fn junction() {
+
+fn junction() {
     println!("Did You");
     println!("1) Go east");
     println!("2) Go south ");
     println!("3) Go north ");
     match input_inside(1..=3) {
         1 => {
-            println!("You continued traveling North When you heard a weired noise.");
+            println!("You continued traveling east When you heard a weired noise.");
             println!("Did you.");
             println!("1) Go back and be a noob");
             println!("Continue, your not a noob");
@@ -86,32 +86,82 @@ fn main() {
                     println!("1) Attack them.");
                     println!("2)ruuuuuunn!!!!");
                     match input_inside(1..=2) {
-                    1 => {
-                        println!("You could defeat two of Dr Lamptions gaurds but not 15 woriers.");
-                        println!("You died.");
-                        println!("GAME OVER.");
-                        junction();
-                    }
-                    2 => {
-                        println!("You ran, because the forest was so thick they lost you.");
-                        println!("You went back");
-                        junction();
+                        1 => {
+                            println!(
+                                "You could defeat two of Dr Lamptions gaurds but not 15 woriers."
+                            );
+                            println!("You died.");
+                            println!("GAME OVER.");
+                            junction();
+                        }
+                        2 => {
+                            println!("You ran, because the forest was so thick they lost you.");
+                            println!("You went back");
+                            junction();
+                        }
 
+                        _ => unreachable!(),
                     }
-                    _ => unreachable!(), 
-                    }
-
                 }
 
                 _ => unreachable!(),
             }
         }
         2 => {
-            println!("");
+            println!("You countinued traveling south through the trees.");
+            println!("It felt like you were walking forever. You where so tired and verry hungry. Finaly you reached the beach, hungry and tired.");
+            println!("Did you");
+            println!("1) Build a shelter on the beech ");
+            println!("2) Go back into the forest.");
+            match input_inside(1..=2) {
+                1 => {
+                    println!("You used your verry last bit of your energy to collect sticks and leaves and built your shelter on the beach.");
+                    println!("But while you where sleeping the tide came in fast and you drowend");
+                    println!("GAME OVER");
+                    junction();
+                }
+
+                2 => {
+                    println!("You walked back into the forest you were so hungry and tired, suddenly you fell to your knees. ");
+                    println!("You had had enough.");
+                    println!("Did you.");
+                    println!("1) Work through the pain.");
+                    println!("2) Sit there and rest.");
+
+                    match input_inside(1..=2) {
+                        1 => {
+                        println!("You worked untill you felt like you were going to die.");
+                        println!("And you did.");
+                        println!("GAME OVER");
+                        junction();
+                        }
+                    
+                        2 => {
+                            println!("You sat there.");
+                            println!("It was so cold.");
+                            println!("You passed out.");
+                            println!("You died.");
+                            println!("GAME OVER")
+
+                        }
+
+
+                
+                _ => unreachable!(),
+                    }
+
+           }
+           _ => unreachable!(),
+        }
+        
+    }
+        3 => {
+            println!("You kept traveling north.  It felt like you were walking forever but finally you saw someone in a cloke");
+            println!(" I am your guidance said the figure."); 
+            println!("I have only one question for you. What do you want?");
+            println!("Did you ask?")
         }
 
-        _ => unreachable!(),
+      _ => unreachable!(),
     }
 }
-
-
