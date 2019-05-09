@@ -159,9 +159,31 @@ fn junction() {
             println!("You kept traveling north.  It felt like you were walking forever but finally you saw someone in a cloke");
             println!(" I am your guidance said the figure."); 
             println!("I have only one question for you. What do you want?");
-            println!("Did you ask?")
+            println!("Did you ask?");
+            println!("1) I want power.");
+            println!("2) I want to kill Dr Lamption.");
+            println!("3) I want to know about Dr lamption and why he wants me.");
+            match input_inside(1..=3) {
+            1 => {
+                println!("You want power you greedy %$£! ");
+                println!("The figure killed you instantly...  You died.");
+                println!("GAME OVER")
+            }
+            2 => {
+                println!("Dr Lamption brought me to power. HOW DARE YOU!!!!");
+                println!("The figure killed you instantly...  You died.");
+                println!("GAME OVER.")
+            }
+            3 => {
+                println!("Dr lampton");
+            }
+
+
+           _ => unreachable!(), 
         }
 
-      _ => unreachable!(),
     }
+    _ => unreachable!(), 
+}
+
 }
