@@ -141,7 +141,8 @@ fn junction() {
                             println!("It was so cold.");
                             println!("You passed out.");
                             println!("You died.");
-                            println!("GAME OVER")
+                            println!("GAME OVER"); 
+                            junction(); 
 
                         }
 
