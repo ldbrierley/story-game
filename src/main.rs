@@ -61,6 +61,7 @@ fn main() {
         _ => unreachable!(),
     }
     println!(" \"NOOOOOOOOOOO!!!!!!!!!!!!!!!\".  Said Andrew. But you had already gone into the thick forest and out of the sight of Andrew");
+    junction();
 }
 
 
@@ -74,7 +75,7 @@ fn junction() {
             println!("You continued traveling east When you heard a weired noise.");
             println!("Did you.");
             println!("1) Go back and be a noob");
-            println!("Continue, your not a noob");
+            println!("2) Continue, your not a noob");
             match input_inside(1..=2) {
                 1 => {
                     println!("Pathetic.");
@@ -168,16 +169,32 @@ fn junction() {
             1 => {
                 println!("You want power you greedy %$£! ");
                 println!("The figure killed you instantly...  You died.");
-                println!("GAME OVER")
+                println!("GAME OVER");
+                junction();
             }
             2 => {
                 println!("Dr Lamption brought me to power. HOW DARE YOU!!!!");
                 println!("The figure killed you instantly...  You died.");
-                println!("GAME OVER.")
+                println!("GAME OVER.");
+                junction();
             }
             3 => {
-                println!("You win so far, but there will be more coming soon");
-            }
+                println!("Dr lamption wants to kill you because you would become so powerfull if you went to the cave of darkness.");
+                println!("He wants to get there before you and take over the land with the power that should have gone to you");
+                println!("1) Take me to the cave.");
+                println!("2) I don't trust you.");
+                match input_inside(1..=2) {
+                    1=>{
+                         println!("OK let's go!");
+                    }
+                    2=>{
+                        println!("Well bye then.");
+                        println!("He took Dr Lamption to the cave");
+                        println!("GAME")
+                    }
+                _ => unreachable!(),
+                }        
+                }
 
 
            _ => unreachable!(), 
