@@ -56,7 +56,7 @@ fn main() {
             return ();
         }
         2 => {
-            println!("You win so far, but be aware there is more coming soon.");
+            println!("ok");
         }
         _ => unreachable!(),
     }
@@ -176,7 +176,7 @@ fn junction() {
                 println!("GAME OVER.")
             }
             3 => {
-                println!("Dr lampton");
+                println!("You win so far, but there will be more coming soon");
             }
 
 
