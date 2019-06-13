@@ -190,7 +190,8 @@ fn junction() {
                     2=>{
                         println!("Well bye then.");
                         println!("He took Dr Lamption to the cave");
-                        println!("GAME")
+                        println!("GAME OVER");
+                        junction(); 
                     }
                 _ => unreachable!(),
                 }        
@@ -198,6 +199,14 @@ fn junction() {
 
 
            _ => unreachable!(), 
+        }
+        println!("He took you to the cave of darkness where you saw a bright blue crystal.");
+        println!("Did you");
+        println!("1)Take the cristal. This looks ggoooooodd");
+        println!("2)No I will save that one for Dr lamption");
+        match input_inside(1..=2) {
+
+            _ => unreachable!(),
         }
 
     }
