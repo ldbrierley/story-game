@@ -205,6 +205,19 @@ fn junction() {
         println!("1)Take the cristal. This looks ggoooooodd");
         println!("2)No I will save that one for Dr lamption");
         match input_inside(1..=2) {
+            1 => {
+                println!("You touched it and died because of GREEEEEEEDD!!!!!!");
+                println!("GAME OVER");
+                junction(); 
+            }
+            2 => { 
+                println!("Good you are not greedy said the figure");
+                println!("If you had touched it you would have died");
+                println!("The figure took you to a pile of gold with a necklace on the top of it. The figure told you that this was the key to power.");
+                println!("You were about to take it when you saw Andrew hand came up behind you and grabed it. It was just too late Andrew had it and he could do what he wants");
+                println!("YOU ARE GOING TO PAY FOR LEAVING MEEEEE!!!!! he shouted.");
+                println!("MORE SOOON")
+            }
 
             _ => unreachable!(),
         }
