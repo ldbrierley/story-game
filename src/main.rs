@@ -14,8 +14,8 @@ fn main() {
     println!("He knew the very power you could posess, he knew what happend, he knew everything EVEN Andrew.");
     println!("Andrew took you to the exit of the prison when two gaurds stoped you.");
     println!("Did you.");
-    println!("1) Leave andrew to do all the talking.");
-    println!("2) Tell the guards you are visitor and a friend of Andrew.");
+    println!("1) Leave Andrew to do all the talking.");
+    println!("2) Tell the guards that you are visitor and a friend of Andrew.");
     println!("3) Laugh at the guards.");
     println!("4) Attack them.");
     println!("5) Ruuuuuunn!!!");
@@ -38,7 +38,7 @@ fn main() {
             return ();
         }
         4 => {
-            println!(" Both you and Andrew took down the guards with ease remembering your mashal arts skills. ");
+            println!(" Both you and Andrew took down the guards with ease remembering your marshal arts skills. ");
         }
         5 => {
             println!("You and Andrew ran strait in to the gaurds swords and died. .\n GAME OVER. ");
@@ -116,7 +116,7 @@ fn junction() {
             println!("2) Go back into the forest.");
             match input_inside(1..=2) {
                 1 => {
-                    println!("You used your verry last bit of your energy to collect sticks and leaves and built your shelter on the beach.");
+                    println!("You used your very last bit of your energy to collect sticks and leaves and you built your shelter on the beach.");
                     println!("But while you where sleeping the tide came in fast and you drowend");
                     println!("GAME OVER");
                     junction();
@@ -216,14 +216,17 @@ fn junction() {
                 println!("The figure took you to a pile of gold with a necklace on the top of it. The figure told you that this was the key to power.");
                 println!("You were about to take it when you saw Andrew hand came up behind you and grabed it. It was just too late Andrew had it and he could do what he wants");
                 println!("YOU ARE GOING TO PAY FOR LEAVING MEEEEE!!!!! he shouted.");
-                println!("MORE SOOON")
+                println!("DID YOU!")
             }
 
             _ => unreachable!(),
         }
+
 
     }
     _ => unreachable!(), 
 }
 
 }
+
+       
