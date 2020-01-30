@@ -213,10 +213,11 @@ fn junction() {
             2 => { 
                 println!("Good you are not greedy said the figure");
                 println!("If you had touched it you would have died");
-                println!("The figure took you to a pile of gold with a necklace on the top of it. The figure told you that this was the key to power.");
+                println!("The figure took you to a pile of gold with a scepter on the top of it. The figure told you that this was the key to power.");
                 println!("You were about to take it when you saw Andrew hand came up behind you and grabed it. It was just too late Andrew had it and he could do what he wants");
                 println!("YOU ARE GOING TO PAY FOR LEAVING MEEEEE!!!!! he shouted.");
-                println!("DID YOU!")
+                println!("DID YOU!");
+                andrew();
             }
 
             _ => unreachable!(),
@@ -229,4 +230,38 @@ fn junction() {
 
 }
 
+fn andrew() {
+    println!("1)Try and reason with Andrew and tell him that the scepter belongs to you and what he is doing is stealing.");
+    println!("2)Ask the person in the cloke to help you.");
+    println!("3) Attack Andrew head to head.");
+    println!("4)RUUUNNNN!!!!!");
+    match input_inside(1..=4) {
+
+        1 => {
+            println!("Andrew said nothing and he just stared at you like you were some kind of alian.");
+            println!("Suddenly Andrew lifted the scepter and you felt the shear power of it as it caused you to fly across the cave.");
+            println!("Im gonna kill you!!! shouted Andrew and the person in the cloke was not helping you at all.");
+            println!("Andrew pointed the scepter at you and you flew back on to the hard grownd in pain.");
+            println!("SAY YOUR LAST WORDS!!! screamed Andrew.");
+            println!("Did you? 1) Tell Andrew that you want to work together to save the land from Dr Lamption ");
+            println!("2) Tell Andrew you hate him and never cared about him.");
+            match input_inside(1..=2) {
+                1 => {
+                    println!("Well I am not with you. You felt the blade of the scepter pierce your heart and you died");
+                    println!("GAME OVER.");
+                    andrew();    
+                }
+                2 => {}
+            }
+            _ => unreachable!(),
+
+
+        }
+
+
+    
+    }
+
+
+}
        
