@@ -64,7 +64,6 @@ fn main() {
     junction();
 }
 
-
 fn junction() {
     println!("Did You");
     println!("1) Go east");
@@ -131,103 +130,94 @@ fn junction() {
 
                     match input_inside(1..=2) {
                         1 => {
-                        println!("You worked untill you felt like you were going to die.");
-                        println!("And you did.");
-                        println!("GAME OVER");
-                        junction();
+                            println!("You worked untill you felt like you were going to die.");
+                            println!("And you did.");
+                            println!("GAME OVER");
+                            junction();
                         }
-                    
+
                         2 => {
                             println!("You sat there.");
                             println!("It was so cold.");
                             println!("You passed out.");
                             println!("You died.");
-                            println!("GAME OVER"); 
-                            junction(); 
-
+                            println!("GAME OVER");
+                            junction();
                         }
 
-
-                
-                _ => unreachable!(),
+                        _ => unreachable!(),
                     }
-
-           }
-           _ => unreachable!(),
+                }
+                _ => unreachable!(),
+            }
         }
-        
-    }
         3 => {
             println!("You kept traveling north.  It felt like you were walking forever but finally you saw someone in a cloke");
-            println!(" I am your guidance said the figure."); 
+            println!(" I am your guidance said the figure.");
             println!("I have only one question for you. What do you want?");
             println!("Did you ask?");
             println!("1) I want power.");
             println!("2) I want to kill Dr Lamption.");
             println!("3) I want to know about Dr lamption and why he wants me.");
             match input_inside(1..=3) {
-            1 => {
-                println!("You want power you greedy %$£! ");
-                println!("The figure killed you instantly...  You died.");
-                println!("GAME OVER");
-                junction();
-            }
-            2 => {
-                println!("Dr Lamption brought me to power. HOW DARE YOU!!!!");
-                println!("The figure killed you instantly...  You died.");
-                println!("GAME OVER.");
-                junction();
-            }
-            3 => {
-                println!("Dr lamption wants to kill you because you would become so powerfull if you went to the cave of darkness.");
-                println!("He wants to get there before you and take over the land with the power that should have gone to you");
-                println!("1) Take me to the cave.");
-                println!("2) I don't trust you.");
-                match input_inside(1..=2) {
-                    1=>{
-                         println!("OK let's go!");
+                1 => {
+                    println!("You want power you greedy %$£! ");
+                    println!("The figure killed you instantly...  You died.");
+                    println!("GAME OVER");
+                    junction();
+                }
+                2 => {
+                    println!("Dr Lamption brought me to power. HOW DARE YOU!!!!");
+                    println!("The figure killed you instantly...  You died.");
+                    println!("GAME OVER.");
+                    junction();
+                }
+                3 => {
+                    println!("Dr lamption wants to kill you because you would become so powerfull if you went to the cave of darkness.");
+                    println!("He wants to get there before you and take over the land with the power that should have gone to you");
+                    println!("1) Take me to the cave.");
+                    println!("2) I don't trust you.");
+                    match input_inside(1..=2) {
+                        1 => {
+                            println!("OK let's go!");
+                        }
+                        2 => {
+                            println!("Well bye then.");
+                            println!("He took Dr Lamption to the cave");
+                            println!("GAME OVER");
+                            junction();
+                        }
+                        _ => unreachable!(),
                     }
-                    2=>{
-                        println!("Well bye then.");
-                        println!("He took Dr Lamption to the cave");
-                        println!("GAME OVER");
-                        junction(); 
-                    }
-                _ => unreachable!(),
-                }        
                 }
 
-
-           _ => unreachable!(), 
-        }
-        println!("He took you to the cave of darkness where you saw a bright blue crystal.");
-        println!("Did you");
-        println!("1)Take the cristal. This looks ggoooooodd");
-        println!("2)No I will save that one for Dr lamption");
-        match input_inside(1..=2) {
-            1 => {
-                println!("You touched it and died because of GREEEEEEEDD!!!!!!");
-                println!("GAME OVER");
-                junction(); 
+                _ => unreachable!(),
             }
-            2 => { 
-                println!("Good you are not greedy said the figure");
-                println!("If you had touched it you would have died");
-                println!("The figure took you to a pile of gold with a scepter on the top of it. The figure told you that this was the key to power.");
-                println!("You were about to take it when you saw Andrew hand came up behind you and grabed it. It was just too late Andrew had it and he could do what he wants");
-                println!("YOU ARE GOING TO PAY FOR LEAVING MEEEEE!!!!! he shouted.");
-                println!("DID YOU!");
-                andrew();
+            println!("He took you to the cave of darkness where you saw a bright blue crystal.");
+            println!("Did you");
+            println!("1)Take the cristal. This looks ggoooooodd");
+            println!("2)No I will save that one for Dr lamption");
+            match input_inside(1..=2) {
+                1 => {
+                    println!("You touched it and died because of GREEEEEEEDD!!!!!!");
+                    println!("GAME OVER");
+                    junction();
+                }
+                2 => {
+                    println!("Good you are not greedy said the figure");
+                    println!("If you had touched it you would have died");
+                    println!("The figure took you to a pile of gold with a scepter on the top of it. The figure told you that this was the key to power.");
+                    println!("You were about to take it when you saw Andrew hand came up behind you and grabed it. It was just too late Andrew had it and he could do what he wants");
+                    println!("YOU ARE GOING TO PAY FOR LEAVING MEEEEE!!!!! he shouted.");
+                    println!("DID YOU!");
+                    andrew();
+                }
+
+                _ => unreachable!(),
             }
-
-            _ => unreachable!(),
         }
-
-
+        _ => unreachable!(),
     }
-    _ => unreachable!(), 
-}
-
 }
 
 fn andrew() {
@@ -236,9 +226,10 @@ fn andrew() {
     println!("3) Attack Andrew head to head.");
     println!("4)RUUUNNNN!!!!!");
     match input_inside(1..=4) {
-
         1 => {
-            println!("Andrew said nothing and he just stared at you like you were some kind of alian.");
+            println!(
+                "Andrew said nothing and he just stared at you like you were some kind of alian."
+            );
             println!("Suddenly Andrew lifted the scepter and you felt the shear power of it as it caused you to fly across the cave.");
             println!("Im gonna kill you!!! shouted Andrew and the person in the cloke was not helping you at all.");
             println!("Andrew pointed the scepter at you and you flew back on to the hard grownd in pain.");
@@ -249,19 +240,36 @@ fn andrew() {
                 1 => {
                     println!("Well I am not with you. You felt the blade of the scepter pierce your heart and you died");
                     println!("GAME OVER.");
-                    andrew();    
+                    andrew();
                 }
-                2 => {}
+                2 => {
+                    println!("Andrew dropped the scepter in shock and then the room went so quite that you would have heard a pin drop. ");
+                    println!("Did you");
+                    println!("1)Use this opertunity to pick up the scepter and kill Andrew.");
+                    println!("2)Tell Andrew that you wish him dead.");
+                    match input_inside(1..=2) {
+                        1 => {
+                            println!("You lifted up the scepter and stabbed Andrew");
+                            println!("Andrew stared in your eyes with tears of betrayal");
+                            println!("Andrew fell down dead.");
+                            println!("You have now the powere to kill Dr Lamption!");
+                        }
+
+                        2 => {
+                            println!("YOU WISH ME DEAD!!!!!!!");
+                            println!("Andrew stabbed you twenty five times untill you died");
+                            println!("Game over");
+                            andrew();
+                        }
+
+                        _ => unreachable!(),
+                    }
+
+                }
+                _ => unreachable!(),
             }
-            _ => unreachable!(),
-
-
         }
 
-
-    
+        _ => unreachable!(),
     }
-
-
 }
-       
