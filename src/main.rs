@@ -252,7 +252,7 @@ fn andrew() {
                             println!("You lifted up the scepter and stabbed Andrew");
                             println!("Andrew stared in your eyes with tears of betrayal");
                             println!("Andrew fell down dead.");
-                            println!("You have now the powere to kill Dr Lamption!");
+                            println!("You have now the power to kill Dr Lamption!");
                         }
 
                         2 => {
@@ -269,6 +269,13 @@ fn andrew() {
                 _ => unreachable!(),
             }
         }
+
+    2 => {
+        println!("The man in the cloke tried to strike Andrew with lightning but Andrew with the scepter in his hand deflected the lightning into you");
+        println!("You flew back into the cave wall in shear pain as you felt the lightning go through your body.");
+        printlin!("The man in the cloke grabbed his sword and started to fight Andrew while you sat there in pain contomplating your decision makeing.");
+        
+    }
 
         _ => unreachable!(),
     }
