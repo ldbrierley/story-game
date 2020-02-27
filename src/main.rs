@@ -274,6 +274,12 @@ fn andrew() {
         println!("The man in the cloke tried to strike Andrew with lightning but Andrew with the scepter in his hand deflected the lightning into you");
         println!("You flew back into the cave wall in shear pain as you felt the lightning go through your body.");
         printlin!("The man in the cloke grabbed his sword and started to fight Andrew while you sat there in pain contomplating your decision makeing.");
+        println!("The man in the cloke was no match for Andrew's scepter and Andrew got the upper hand stabbing the man in the chest");
+        println!("Andrew walked over to you and stabbed you in the chest twenty five times with the blade on the scepter");
+
+    }
+
+    3 => { 
         
     }
 
