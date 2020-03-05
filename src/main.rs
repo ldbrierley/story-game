@@ -280,7 +280,15 @@ fn andrew() {
     }
 
     3 => { 
-        println!("You tried to Attack andrew with a kick but Andrew just lifted his scepter and you flew through the air and landed at the side of the cave.")
+        println!("You tried to Attack andrew with a kick but Andrew just lifted his scepter and you flew through the air and landed at the side of the cave and that was when you realised you had messed up.");
+        println!("You realised that you were no match for Andrew's scepter.");
+        println!("Before you knew it you were at the corner of the cave");
+        println!("Andrew stabbed you 25 times and you died");
+        println!("GAME OVER");
+        andrew();  
+    }
+
+    4 => {
         
     }
 
